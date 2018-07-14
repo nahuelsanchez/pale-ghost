@@ -1,0 +1,22 @@
+{{!--
+    This is the default layout, or base template which contains all the boring bits of HTML that have to appear on every page. Read more about it in https://themes.ghost.org/docs/templates
+--}}
+<!DOCTYPE html>
+<html lang="{{lang}}">
+    {{> core/head}}
+
+    <body class="{{body_class}}">
+        <div class="wrapper">
+            {{> core/header}}
+
+            {{!-- All the main content gets inserted here, index.hbs, post.hbs, etcetera. --}}
+            <main class="main">
+                {{{body}}}
+            </main>
+
+            {{> core/footer}}
+        </div>
+
+        {{> core/foot}}
+    </body>
+</html>

@@ -1,0 +1,25 @@
+<div class="post-authors">
+    <ul class="authors-list">
+        {{#foreach authors}}
+            <li class="authors-list-item">
+                {{#if profile_image}}
+                    <div class="author-image">
+                        <a href="{{url}}" title="More post from {{name}}">
+                            <img src="{{profile_image}}" alt="{{name}}" />
+                        </a>
+                    </div>
+                {{/if}}
+
+                <div class="author-name">
+                    <a href="{{url}}" title="More post from {{name}}">{{name}}</a>
+                </div>
+
+                {{#if bio}}
+                    <div class="author-bio">
+                        <p>{{bio}}</p>
+                    </div>
+                {{/if}}
+            </li>
+        {{/foreach}}
+    </ul>
+</div>

@@ -1,0 +1,23 @@
+{{!--
+    The amp template is used to render an automatic AMP (Accelerated Mobile Pages) version of your post, which makes things load crazy-fast on mobile devices and puts you in Google's good-books. Read more about it in https://themes.ghost.org/docs/amp
+--}}
+<!DOCTYPE html>
+<html ⚡>
+    {{> amp/core/head}}
+
+    <body class="{{body_class}} amp-template">
+        <div class="wrapper">
+            {{> amp/core/header}}
+
+            <main class="main">
+                {{#post}}
+                    {{> "amp/post-single"}}
+                {{/post}}
+            </main>
+
+            {{> core/footer}}
+        </div>
+
+        {{> core/foot}}
+    </body>
+</html>

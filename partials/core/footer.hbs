@@ -1,0 +1,28 @@
+<footer class="footer">
+    {{#if @labs.subscribers}}
+        <section class="footer-subscribe">
+            <h4>Subscribe to {{@blog.title}}</h4>
+            <p>Get the latest posts delivered right to your inbox</p>
+
+            {{subscribe_form placeholder="youremail@example.com"}}
+        </section>
+    {{/if}}
+
+    <nav class="footer-social">
+        <ul>
+            {{#if @blog.facebook}}
+                <li><a href="{{facebook_url @blog.facebook}}" rel="noopener" target="_blank">Facebook</a></li>
+            {{/if}}
+            {{#if @blog.twitter}}
+                <li><a href="{{twitter_url @blog.twitter}}" rel="noopener" target="_blank">Twitter</a></li>
+            {{/if}}
+        </ul>
+    </nav>
+
+    <section class="footer-copyright">
+        <a href="{{@blog.url}}" title="{{@blog.title}}">{{@blog.title}}</a> &copy; {{date format="YYYY"}}
+    </section>
+
+    <section class="footer-powerby">
+        <a href="https://github.com/nahuelsanchez/pale-ghost" title="Pale Ghost">Pale Ghost</a> theme by <a href="http://www.nahuelsanchez.com/" title="Nahuel Sanchez">Nahuel Sanchez</a>. Published with <a href="https://ghost.org" title="Ghost">Ghost</a>.</section>
+</footer>

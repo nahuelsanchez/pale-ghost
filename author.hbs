@@ -1,0 +1,13 @@
+{{!--
+	An author template for the author archive pages. Read more about it in https://themes.ghost.org/docs/templates
+--}}
+
+{{!< default}}
+
+{{#author}}
+	<div class="author-page-data">
+		<span>You're looking at all the posts published by <span>{{name}}</span>.</span>
+	</div>
+{{/author}}
+
+{{> "posts-loop"}}

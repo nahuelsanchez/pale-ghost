@@ -1,0 +1,23 @@
+<article class="post-single {{post_class}}{{#if feature_image}} with-feature-image{{/if}}">
+    <header>
+        {{> post/title}}
+
+        {{> amp/post/feature-image}}
+
+        {{> post/tags-primary}}
+
+        {{> post/date}}
+
+        {{> post/reading-time}}
+    </header>
+
+    <section>
+        {{> amp/post/content}}
+    </section>
+
+    <footer>
+        {{> post/tags-all}}
+
+        {{> post/authors}}
+    </footer>
+</article>

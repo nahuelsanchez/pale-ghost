@@ -1,0 +1,108 @@
+/* line 3, ../sass/beautify.scss */
+body {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #2f2c30;
+  margin: 50px;
+  padding: 50px;
+}
+/* line 9, ../sass/beautify.scss */
+body img {
+  max-width: 100%;
+}
+@media (max-width: 1024px) {
+  /* line 3, ../sass/beautify.scss */
+  body {
+    margin: 15px;
+    padding: 15px;
+  }
+}
+@media (max-width: 768px) {
+  /* line 3, ../sass/beautify.scss */
+  body {
+    margin: 10px;
+    padding: 10px;
+  }
+}
+@media (max-width: 640px) {
+  /* line 3, ../sass/beautify.scss */
+  body {
+    margin: 0px;
+    padding: 0px;
+  }
+}
+
+/* line 29, ../sass/beautify.scss */
+.wrapper {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+}
+/* line 34, ../sass/beautify.scss */
+.wrapper .header,
+.wrapper .main,
+.wrapper .footer {
+  background: #fbfbf9;
+  margin: 15px;
+  padding: 15px;
+}
+/* line 41, ../sass/beautify.scss */
+.wrapper .header > *,
+.wrapper .main > *,
+.wrapper .footer > * {
+  border: 5px dashed #bac0ce;
+  margin: 25px;
+  padding: 25px;
+}
+@media (max-width: 768px) {
+  /* line 34, ../sass/beautify.scss */
+  .wrapper .header,
+  .wrapper .main,
+  .wrapper .footer {
+    margin: 0;
+  }
+}
+/* line 53, ../sass/beautify.scss */
+.wrapper .main .post header,
+.wrapper .main .post section,
+.wrapper .main .post footer {
+  padding: 0;
+}
+/* line 58, ../sass/beautify.scss */
+.wrapper .main .post header > *,
+.wrapper .main .post section > *,
+.wrapper .main .post footer > * {
+  margin: 30px;
+  padding: 15px;
+}
+@media (max-width: 768px) {
+  /* line 58, ../sass/beautify.scss */
+  .wrapper .main .post header > *,
+  .wrapper .main .post section > *,
+  .wrapper .main .post footer > * {
+    margin: 0;
+  }
+}
+/* line 70, ../sass/beautify.scss */
+.wrapper .main .post header > *,
+.wrapper .main .post footer > * {
+  background: #e9e8e6;
+}
+/* line 75, ../sass/beautify.scss */
+.wrapper .main .post section {
+  background: #e9e8e6;
+  margin: 30px;
+  padding: 15px;
+}
+/* line 80, ../sass/beautify.scss */
+.wrapper .main .post section > * {
+  margin: 0;
+  padding: 0;
+}
+@media (max-width: 768px) {
+  /* line 75, ../sass/beautify.scss */
+  .wrapper .main .post section {
+    margin: 0;
+  }
+}

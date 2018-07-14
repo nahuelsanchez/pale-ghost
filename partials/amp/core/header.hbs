@@ -1,0 +1,37 @@
+<header class="header">
+    {{#if @blog.logo}}
+        <div class="blog-logo">
+            {{#is "home"}}
+                <amp-img alt="{{@blog.title}}" height="100" src="{{@blog.logo}}" width="100" />
+            {{else}}
+                <a href="{{@blog.url}}" title="{{@blog.title}}">
+                    <amp-img alt="{{@blog.title}}" height="100" src="{{@blog.logo}}" width="100" />
+                </a>
+            {{/is}}
+        </div>
+    {{/if}}
+
+    <div class="blog-title">
+        {{#is "home"}}
+            <h1>
+                {{@blog.title}}
+            </h1>
+        {{else}}
+            <h2>
+                <a href="{{@blog.url}}" title="{{@blog.title}}">{{@blog.title}}</a>
+            </h2>
+        {{/is}}
+    </div>
+
+    {{#if @blog.description}}
+        <div class="blog-description">
+            <p>{{@blog.description}}</p>
+        </div>
+    {{/if}}
+
+    {{#if @blog.navigation}}
+        <nav class="blog-nav">
+            {{navigation}}
+        </nav>
+    {{/if}}
+</header>

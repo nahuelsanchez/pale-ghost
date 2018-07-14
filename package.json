@@ -1,0 +1,41 @@
+{
+	"name": "pale-ghost",
+	"description": "A blank, dev ready, Ghost theme. :)",
+	"version": "1.0.0",
+	"engines": {
+		"ghost": ">=1.2.0"
+	},
+	"license": "MIT",
+	"screenshots": {
+		"desktop": "assets/screenshots/desktop.jpg",
+		"mobile": "assets/screenshots/mobile.jpg"
+	},
+	"author": {
+		"name": "Nahuel Sanchez",
+		"email": "nahuel@nahuelsanchez.com",
+		"url": "https://www.nahuelsanchez.com/"
+	},
+	"gpm": {
+		"type": "theme",
+		"categories": [
+			"Minimal"
+		]
+	},
+	"keywords": [
+		"ghost",
+		"theme",
+		"blank",
+		"dev",
+		"developer",
+		"development"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/nahuelsanchez/pale-ghost.git"
+	},
+	"bugs": "https://github.com/nahuelsanchez/pale-ghost/issues",
+	"contributors": "https://github.com/nahuelsanchez/pale-ghost/graphs/contributors",
+	"config": {
+		"posts_per_page": 5
+	}
+}
