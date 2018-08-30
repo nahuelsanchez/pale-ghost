@@ -27,7 +27,8 @@
 		"blank",
 		"dev",
 		"developer",
-		"development"
+		"development",
+		"ghost-theme"
 	],
 	"repository": {
 		"type": "git",
