@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.1 - 2018-12-24
+### Fixed
+- Missing required CSS classes so the theme passes the GScan validation for Ghost 2 version serie.
+
 ## 1.1.0 - 2018-08-29
 ### Added
 - Missing recommended keyword in package.json.
