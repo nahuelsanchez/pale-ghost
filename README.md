@@ -42,6 +42,8 @@ For that reason, it does not include any CSS because the idea is that you use th
 
 What the Pale Ghost theme does have is a `beautify.css` file that highlights the main elements in the markup for a more easy coding. Keep this in the `head.hbs` file if you don not want to see a mess when loading the theme in your browser.
 
+Also, you can find a `ghost.css` file which includes some mandatory CSS class for the GScan validation to pass.
+
 ### AMP ready
 
 With some specific AMP modifications separated into specific `.hbs` files for easy maintenance.
