@@ -1,9 +1,9 @@
 {
 	"name": "pale-ghost",
 	"description": "A blank, dev ready, Ghost theme. :)",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"engines": {
-		"ghost": ">=1.2.0"
+		"ghost": ">=2.0.0"
 	},
 	"license": "MIT",
 	"screenshots": {

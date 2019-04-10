@@ -1,7 +1,7 @@
 <footer class="footer">
     {{#if @labs.subscribers}}
         <section class="footer-subscribe">
-            <h4>Subscribe to {{@blog.title}}</h4>
+            <h4>Subscribe to {{@site.title}}</h4>
             <p>Get the latest posts delivered right to your inbox</p>
 
             {{subscribe_form placeholder="youremail@example.com"}}
@@ -10,17 +10,17 @@
 
     <nav class="footer-social">
         <ul>
-            {{#if @blog.facebook}}
-                <li><a href="{{facebook_url @blog.facebook}}" rel="noopener" target="_blank">Facebook</a></li>
+            {{#if @site.facebook}}
+                <li><a href="{{facebook_url @site.facebook}}" rel="noopener" target="_blank">Facebook</a></li>
             {{/if}}
-            {{#if @blog.twitter}}
-                <li><a href="{{twitter_url @blog.twitter}}" rel="noopener" target="_blank">Twitter</a></li>
+            {{#if @site.twitter}}
+                <li><a href="{{twitter_url @site.twitter}}" rel="noopener" target="_blank">Twitter</a></li>
             {{/if}}
         </ul>
     </nav>
 
     <section class="footer-copyright">
-        <a href="{{@blog.url}}" title="{{@blog.title}}">{{@blog.title}}</a> &copy; {{date format="YYYY"}}
+        <a href="{{@site.url}}" title="{{@site.title}}">{{@site.title}}</a> &copy; {{date format="YYYY"}}
     </section>
 
     <section class="footer-powerby">
