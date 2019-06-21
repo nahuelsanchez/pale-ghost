@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.2 - 2019-06-21
+### Fixed
+- Start using @site data helper instead of @blog (thanks @davidmles).
+
 ## 1.1.1 - 2018-12-24
 ### Fixed
 - Missing required CSS classes so the theme passes the GScan validation for Ghost 2 version serie.
