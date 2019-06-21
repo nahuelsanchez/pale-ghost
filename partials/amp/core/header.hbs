@@ -1,11 +1,11 @@
 <header class="header">
-    {{#if @blog.logo}}
+    {{#if @site.logo}}
         <div class="blog-logo">
             {{#is "home"}}
-                <amp-img alt="{{@blog.title}}" height="100" src="{{@blog.logo}}" width="100" />
+                <amp-img alt="{{@site.title}}" height="100" src="{{@site.logo}}" width="100" />
             {{else}}
-                <a href="{{@blog.url}}" title="{{@blog.title}}">
-                    <amp-img alt="{{@blog.title}}" height="100" src="{{@blog.logo}}" width="100" />
+                <a href="{{@site.url}}" title="{{@site.title}}">
+                    <amp-img alt="{{@site.title}}" height="100" src="{{@site.logo}}" width="100" />
                 </a>
             {{/is}}
         </div>
@@ -14,22 +14,22 @@
     <div class="blog-title">
         {{#is "home"}}
             <h1>
-                {{@blog.title}}
+                {{@site.title}}
             </h1>
         {{else}}
             <h2>
-                <a href="{{@blog.url}}" title="{{@blog.title}}">{{@blog.title}}</a>
+                <a href="{{@site.url}}" title="{{@site.title}}">{{@site.title}}</a>
             </h2>
         {{/is}}
     </div>
 
-    {{#if @blog.description}}
+    {{#if @site.description}}
         <div class="blog-description">
-            <p>{{@blog.description}}</p>
+            <p>{{@site.description}}</p>
         </div>
     {{/if}}
 
-    {{#if @blog.navigation}}
+    {{#if @site.navigation}}
         <nav class="blog-nav">
             {{navigation}}
         </nav>
